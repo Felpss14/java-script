@@ -16,14 +16,27 @@
     </style>
 </head>
 <body>
-    <div id="area" onmouseenter="entrar()">
+    <div id="area">
         Interaja...
     </div>
 <script>
-    function entrar() {
-        var a = window.document.getElementById('area')
+    var a = window.document.getElementById('area')
+
+    a.addEventListener ('click', function() {
+        a.innerText = 'Clicou!'
+        a.style.background = 'yellow'
+        a.style.color = 'black'
+    })
+    a.addEventListener ('mouseenter', function() {
         a.innerText = 'Entrou!'
-    }
+        a.style.background = 'red'
+        a.style.color = 'white'
+    })
+    a.addEventListener ('mouseleave', function(){
+        a.innerText = 'Saiu!'
+        a.style.background = 'green'
+        a.style.color = 'white'
+    })
 </script>
 </body>
 </html>
