@@ -14,8 +14,7 @@ function contar() {
         passo = 1
     }
 
-    res.innerHTML = 'Contando: '
-
+    res.innerHTML = 'Contando: <br> '
     var i = Number(ini)
     var f = Number(fim)
     var p = Number(passo)
